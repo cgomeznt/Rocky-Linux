@@ -109,8 +109,8 @@ Paso 3: Iniciar la Instalación Automatizada
 
    *Nota*: Si el archivo está en USB, usa:
 
-   .. code-block:: bash
-      inst.ks=hd:sdb1:/ks.cfg  # Ajusta ``sdb1`` según tu dispositivo.
+       .. code-block:: bash
+          inst.ks=hd:sdb1:/ks.cfg  # Ajusta ``sdb1`` según tu dispositivo.
 
 3. La instalación comenzará automáticamente sin intervención.
 
