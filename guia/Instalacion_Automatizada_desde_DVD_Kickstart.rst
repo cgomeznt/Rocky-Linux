@@ -107,7 +107,7 @@ Paso 3: Iniciar la Instalación Automatizada
    .. code-block:: bash
       inst.ks=hd:LABEL=Rocky-9-0:/ks.cfg
 
-   *Nota*: Si el archivo está en USB, usa:
+*Nota*: Si el archivo está en USB, usa:
 
        .. code-block:: bash
           inst.ks=hd:sdb1:/ks.cfg  # Ajusta ``sdb1`` según tu dispositivo.
