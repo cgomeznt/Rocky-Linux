@@ -91,6 +91,7 @@ Paso 2: Guardar el Archivo en el DVD/USB
         umount /mnt/iso
 
 2. **Si usas USB**:
+
    - Copia el archivo a la raíz del USB:
 
      .. code-block:: bash
