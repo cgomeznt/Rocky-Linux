@@ -77,17 +77,20 @@ Paso 2: Guardar el Archivo en el DVD/USB
    - Monta la ISO de Rocky Linux:
 
      .. code-block:: bash
+
         mkdir /mnt/iso
         mount -o loop Rocky-9.x.iso /mnt/iso
 
    - Copia ``ks.cfg`` al directorio raíz del DVD:
 
      .. code-block:: bash
+
         cp ks.cfg /mnt/iso/
 
    - Cierra la sesión:
 
      .. code-block:: bash
+
         umount /mnt/iso
 
 2. **Si usas USB**:
@@ -95,6 +98,7 @@ Paso 2: Guardar el Archivo en el DVD/USB
    - Copia el archivo a la raíz del USB:
 
      .. code-block:: bash
+
         cp ks.cfg /media/usb/
 
 ----------------------------------------
@@ -104,13 +108,15 @@ Paso 3: Iniciar la Instalación Automatizada
 1. Inserta el DVD/USB y arranca la máquina.
 2. En el menú de arranque de Anaconda (instalador), presiona ``Tab`` para editar la línea de arranque y añade:
 
-   .. code-block:: bash
+    .. code-block:: bash
+
       inst.ks=hd:LABEL=Rocky-9-0:/ks.cfg
 
-*Nota*: Si el archivo está en USB, usa:
+    *Nota*: Si el archivo está en USB, usa:
 
-       .. code-block:: bash
-          inst.ks=hd:sdb1:/ks.cfg  # Ajusta ``sdb1`` según tu dispositivo.
+    .. code-block:: bash
+
+      inst.ks=hd:sdb1:/ks.cfg  # Ajusta ``sdb1`` según tu dispositivo.
 
 3. La instalación comenzará automáticamente sin intervención.
 
