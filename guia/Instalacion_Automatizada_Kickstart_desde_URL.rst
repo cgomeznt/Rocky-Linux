@@ -62,9 +62,8 @@ Paso 1: Crear y Publicar el Archivo Kickstart
 
 2. **Subir el archivo a un servidor web**:
 
-   - Ejemplo con Python (servidor temporal):
+   - Ejemplo con Python (servidor temporal)::
 
-   .. code-block:: bash
         python3 -m http.server 8000
 
 
@@ -77,9 +76,8 @@ Paso 2: Iniciar la Instalación desde Medios Físicos (DVD/USB)
 1. **Arrancar desde el DVD/USB** de Rocky Linux.
 2. **Editar la línea de arranque**:
    - Presiona la tecla ``Tab`` en el menú de instalación.
-   - Añade el siguiente parámetro (ajusta la URL):
+   - Añade el siguiente parámetro (ajusta la URL)::
 
-     .. code-block:: bash
         inst.ks=http://tuserver.com:8000/ks.cfg
 
    *Ejemplos de URLs válidas*:
@@ -93,19 +91,16 @@ Paso 2: Iniciar la Instalación desde Medios Físicos (DVD/USB)
 Paso 3: Configuraciones Adicionales (Opcional)
 ----------------------------------------
 
-- **Kickstart con HTTPS**:
+- **Kickstart con HTTPS**::
 
-  .. code-block:: bash
     inst.ks=https://dominio.com/ks.cfg
 
-- **Ignorar verificación SSL** (si usas un certificado autofirmado):
+- **Ignorar verificación SSL** (si usas un certificado autofirmado)::
 
-  .. code-block:: bash
     inst.ks=https://dominio.com/ks.cfg inst.noverifyssl
 
-- **Especificar interfaz de red manualmente**:
+- **Especificar interfaz de red manualmente**::
 
-  .. code-block:: bash
     inst.ks=http://url/ks.cfg ip=192.168.1.50::192.168.1.1:255.255.255.0:hostname:eth0:none
 
 ----------------------------------------
