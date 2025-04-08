@@ -61,6 +61,7 @@ Paso 1: Crear y Publicar el Archivo Kickstart
       %end
 
 2. **Subir el archivo a un servidor web**:
+
    - Ejemplo con Python (servidor temporal):
 
      .. code-block:: bash
